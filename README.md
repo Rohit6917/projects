@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Data science**
 
-- 👨‍💻 All of my projects are available at [linkedin.com/in/rohit-kumar-raj-0b891624a](linkedin.com/in/rohit-kumar-raj-0b891624a)
+- 👨‍💻 All of my projects are available at(https://github.com/Rohit6917)
 
 - 💬 Ask me about **MySQL, Data science and Data Analyst**
 
