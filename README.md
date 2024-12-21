@@ -1,6 +1,14 @@
 <h1 align="center">Hi 👋, I'm Rohit Kumar Raj</h1>
 <h3 align="center">An Aspiring Data Analyst and Data science from India</h3>
 
+- 🌱 I’m currently learning **Data science**
+
+- 👨‍💻 All of my projects are available at [linkedin.com/in/rohit-kumar-raj-0b891624a](linkedin.com/in/rohit-kumar-raj-0b891624a)
+
+- 💬 Ask me about **MySQL, Data science and Data Analyst**
+
+- 📫 How to reach me **linkedin.com/in/rohit-kumar-raj-0b891624a**
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/linkedin.com/in/rohit-kumar-raj-0b891624a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/rohit-kumar-raj-0b891624a" height="30" width="40" /></a>
