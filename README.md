@@ -1,67 +1,55 @@
-# Hi there, I'm Rohit Kumar Raj 👋
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./styles/global.css";
 
-![Banner](https://your-image-link.com/banner.png)
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
 
-## 🚀 Data Analyst | Data Scientist | Power BI Enthusiast
+export default App;
 
-🔹 **Location:** Kolkata, West Bengal, India  
-🔹 **Education:** B.Sc in Analytical Physics, University of Calcutta  
-🔹 **Email:** [rohitkumarraj311@gmail.com](mailto:rohitkumarraj311@gmail.com)  
-🔹 **GitHub:** [github.com/Rohit6917](https://github.com/Rohit6917)  
-🔹 **LinkedIn:** [linkedin.com/in/rohit-kumar-raj](https://www.linkedin.com/in/rohit-kumar-raj)
+// Navbar Component
+import { Link } from "react-router-dom";
 
----
+const Navbar = () => (
+  <nav className="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <h1 className="text-xl font-bold">Rohit Kumar Raj</h1>
+    <div>
+      <Link to="/" className="mx-2">Home</Link>
+      <Link to="/about" className="mx-2">About</Link>
+      <Link to="/projects" className="mx-2">Projects</Link>
+      <Link to="/resume" className="mx-2">Resume</Link>
+      <Link to="/contact" className="mx-2">Contact</Link>
+    </div>
+  </nav>
+);
 
-## 🛠 Tech Stack & Skills
+export default Navbar;
 
-**Languages & Databases:**  
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![R](https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+// Footer Component
+const Footer = () => (
+  <footer className="bg-gray-800 text-white text-center p-3 mt-4">
+    <p>&copy; 2025 Rohit Kumar Raj. All Rights Reserved.</p>
+  </footer>
+);
 
-**Data Analysis & Visualization:**  
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy) ![Power BI](https://img.shields.io/badge/-PowerBI-F2C811?style=flat-square&logo=powerbi)
-
-**Web Technologies:**  
-![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
-
----
-
-## 💼 Work Experience
-
-### **Analyst - Aditya Birla Capital** *(March 2023 - July 2024)*
-- **Customer Loan & Credit Risk Analysis**: Developed predictive models to assess loan risks.
-- **Sales & Productivity Dashboard**: Built a Power BI dashboard for real-time analytics.
-
-### **Data Science Intern - Oasis Infobyte Solution**
-- Worked on three real-world data science projects.
-
----
-
-## 🔥 Projects
-
-| Project | Tools & Tech | Repo Link |
-|---------|------------|----------|
-| **Amazon Sales Dashboard** | Power BI | [GitHub](https://github.com/Rohit6917/projects) |
-| **Financial Dashboard** | Power BI | [GitHub](https://github.com/Rohit6917/FINANCIAL-DASHBOARD?tab=readme-ov-file) |
-| **Diwali Sales Analysis** | Python, Jupyter Notebook, ML | - |
-| **Credit Card Data Dashboard** | Power BI | - |
-| **Zomato Sales Analysis** | Python, Jupyter Notebook | - |
-
----
-
-## 📈 GitHub Stats & Activity
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Rohit6917&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Rohit6917&layout=compact&theme=radical)
-
----
-
-## 🌍 Connect with Me
-
-📧 **Email:** [rohitkumarraj311@gmail.com](mailto:rohitkumarraj311@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/rohit-kumar-raj](https://www.linkedin.com/in/rohit-kumar-raj)  
-🔗 **GitHub:** [github.com/Rohit6917](https://github.com/Rohit6917)  
-📊 **Portfolio (Coming Soon...)**
-
----
-
-⭐ **If you like my work, consider giving a star to my projects!** ⭐
+export default Footer;
